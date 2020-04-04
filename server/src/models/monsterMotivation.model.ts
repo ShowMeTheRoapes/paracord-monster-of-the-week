@@ -1,17 +1,17 @@
 import { Schema, Document, model, Model } from 'mongoose'
 
 export interface MonsterMotivation extends Document {
-    // A good name to tell it apart
+    /** A good name to tell it apart */
     name: string
-    // Some words to describe the goals for this motivation
+    /** Some words to describe the goals for this motivation */
     description: string
-    // A number to determine the weight for it to be randomly chosen. Higher chosen more often.
+    /** A number to determine the weight for it to be randomly chosen. Higher chosen more often. */
     rarity: number
-    // The date this document was created. Created by Mongoose
+    /** The date this document was created. Created by Mongoose */
     createdAt: Date
-    // The date this document last updated. Created by Mongoose
+    /** The date this document last updated. Created by Mongoose */
     updatedAt: Date
-    // The version number for this document. Created by Mongoose
+    /** The version number for this document. Created by Mongoose */
     __v: number
 }
 
@@ -26,4 +26,4 @@ const monsterMotivationSchema = new Schema(
     },
 )
 
-export default (): Model<MonsterMotivation> => model<MonsterMotivation>('MonsterMotifcation', monsterMotivationSchema)
+export default (): Model<MonsterMotivation> => model<MonsterMotivation>('MonsterMotivation', monsterMotivationSchema)
