@@ -19,7 +19,7 @@ const monsterMotivationSchema = new Schema(
     {
         name: { type: String, required: true, unique: true, trim: true },
         description: { type: String, required: true },
-        rarity: { type: Number, default: 10 },
+        rarity: { type: Number, default: 10 }, //TODO change to be an enum value with mappings
     },
     {
         timestamps: true,
