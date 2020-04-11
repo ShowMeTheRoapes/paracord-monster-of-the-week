@@ -22,7 +22,7 @@ afterAll(async () =>{
 
 const model = MonsterMotivationModel()
 
-describe('Monster Motication Controller', () => {
+describe('Monster Motivation Controller', () => {
     describe('getMonsterMotivations', () => {
         const controller = new MonsterMotivationController(model)
         test('returns a status of 200', async () => {
